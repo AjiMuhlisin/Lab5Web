@@ -1,0 +1,25 @@
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+form{
+    border: solid 1px #ccc;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+div {
+    margin-top: 10px;
+}
+
+input{
+    display: block;
+    width: 300px;
+    box-sizing: border-box;
+}

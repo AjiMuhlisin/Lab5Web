@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h1>Form Login</h1>
+    <div class="main">
+        <form action="#">
+            <div class="form-item">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="form-item">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+
+            <div>
+                <button onclick="checkForm()">Login</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function checkForm(){
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if (username == "" || password == "" ){
+                alert("form tidak boleh kosong");
+            }
+
+            else {
+                alert("berhasil login");
+            }
+        }
+    </script>
+</body>
+</html>
